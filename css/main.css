@@ -1,6 +1,9 @@
 :root {
-   --color-black: #000000;
-   --color-white: #ffffff;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-dark-blue: #090c1b;
+    --color-lighter-blue: #153c6b;
+    --color-mantis: #7ac142;
 }
 
 *,
@@ -43,14 +46,89 @@ body {
 .wrapper {
     min-height: 100vh;
     overflow: hidden;
-
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .container {
-   max-width: 117rem;
-   margin:  0 auto;
-   padding: 1.6rem;
+    max-width: 117rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+/* Search Section */
+
+.search {
+    min-height: 30rem;
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.search__body {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.search__title {
+    text-align: center;
+    color: var(--color-white);
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.search__form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border-radius: 1.5rem;
+}
+
+.search__input {
+    border: none;
+    width: 100%;
+    max-width: 45rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    padding: 1.2rem;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.search__input::placeholder {
+    font-size: 1.3rem;
+}
+
+@media (min-width: 62em) {
+    .search__input::placeholder {
+        font-size: 1.5rem;
+    }
+}
+
+.search__btn {
+    border: none;
+    background-color: var(--color-lighter-blue);
+    padding: 1.5rem 1.2rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.search__btn:hover {
+    background-color: var(--color-dark-blue);
+}
+
+.search__btn:hover .search__btn-icon {
+    fill: var(--color-white);
+}
+
+.search__btn-icon {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--color-mantis);
+    transition: all .3s ease-in-out;
 }
