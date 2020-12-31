@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -26,7 +27,11 @@
       crossorigin="" />
    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
+   <div class="preloader-container">
+      <div class="preloader-container__loader"></div>
+   </div>
    <div class="wrapper">
       <section class="search">
          <div class="container">
@@ -36,14 +41,14 @@
                   <input type="text" class="search__input" placeholder="Search for any IP address or domain">
                   <button class="search__btn">
                      <svg class="search__btn-icon">
-                        <use xlink:href="img/sprite.svg#chevron-right"
-                     </svg>
+                        <use xlink:href="img/sprite.svg#chevron-right"></use>
+                      </svg>
                   </button>
                </form>
             </div>
          </div>
       </section>
-      <section class="search-details">
+      <div class="search-details">
          <div class="container">
             <div class="search-details__body">
                <div class="search-details__item">
@@ -64,13 +69,14 @@
                </div>
             </div>
          </div>
-      </section>
-      <section id="map"></section>
+      </div>
+      <div id="map"></div>
    </div>
    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
       crossorigin="">
-   </script>
+      </script>
    <script src="js/main.js" type="module"></script>
 </body>
+
 </html>
