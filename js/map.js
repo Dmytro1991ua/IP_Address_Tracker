@@ -27,7 +27,7 @@ function generateMap({ lat, lng }) {
 
    // customize a location icon to a map
    const locationIcon = L.icon({
-      iconUrl: '../img/location.svg',
+      iconUrl: 'img/location.svg',
       iconSize: [50, 50],
       iconAnchor: [19, 45],
    });
