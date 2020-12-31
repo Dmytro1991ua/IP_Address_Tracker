@@ -21,6 +21,9 @@
    <meta name="msapplication-TileColor" content="#ffffff">
    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
    <meta name="theme-color" content="#ffffff">
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin="" />
    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -40,6 +43,34 @@
             </div>
          </div>
       </section>
+      <section class="search-details">
+         <div class="container">
+            <div class="search-details__body">
+               <div class="search-details__item">
+                  <p class="search-details__title">IP Adress</p>
+                  <p class="search-details__subtitle ip"></p>
+               </div>
+               <div class="search-details__item">
+                  <p class="search-details__title">location</p>
+                  <p class="search-details__subtitle location"></p>
+               </div>
+               <div class="search-details__item">
+                  <p class="search-details__title">Timezone</p>
+                  <p class="search-details__subtitle timezone"></p>
+               </div>
+               <div class="search-details__item">
+                  <p class="search-details__title">ISP</p>
+                  <p class="search-details__subtitle isp"></p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="map"></section>
    </div>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin="">
+   </script>
+   <script src="js/main.js" type="module"></script>
 </body>
 </html>
