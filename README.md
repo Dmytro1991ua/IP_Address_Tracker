@@ -8,8 +8,8 @@ Inspiration and idea to develop this project came from an IP Address Tracker cha
 
 IP_Address_Tracker app is fully responsive, where IP Address location was gotten from IP Geolocation API (https://geo.ipify.org/) and the interactive map was generated from a LeafletJS library (https://leafletjs.com/)and render based on user's input.  
 
-#### Stack of technologies which were used to develop a particular project: 
+##### Stack of technologies which were used to develop a particular project: 
 
-### HTML/HTML5, CSS3, BEM, JS, Fetch API,  Responsive Web Design, Mobile First Approach.
+#### HTML/HTML5, CSS3, BEM, JS, Fetch API,  Responsive Web Design, Mobile First Approach.
 
 A link on GitHub Pages - https://dmytro1991ua.github.io/IP_Address_Tracker/
